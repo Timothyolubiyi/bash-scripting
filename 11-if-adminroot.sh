@@ -14,4 +14,19 @@ if [[ "${username}" != "${admin}" ]] && [[ $EUID != 0 ]] ; then
     echo "You are not the admin or root user, but please be safe!"
 else
     echo "You are the admin user! This could be very destructive!"
+
+fi
+
+
+admin1="Timothy"
+
+read -p "Enter your username? " username
+
+#check if the username provided is the admin
+
+if [[ "${usename}" != "${admin1}" ]] && [[ $EUID != 0 ]] ; then
+    echo "You are not an admin or root user"
+else
+    echo "You are the admin and root user! welcome"
+    
 fi
